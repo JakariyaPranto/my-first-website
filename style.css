@@ -1,0 +1,10 @@
+.bye {
+    color: blueviolet;
+    position: relative;
+}
+.bye:after {
+    content: "bye";
+    position:absolute;
+    margin-left: 10px;
+    padding-left: 10px;
+}
