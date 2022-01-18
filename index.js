@@ -1,13 +1,30 @@
-function leage(num) {
-    let largeNum = [0]
-    for(let i = 0; i < num.length; i++) {
-        let x = num[i]
-        if(largeNum < x) {
-            largeNum = x
-        }
-    } 
-    return largeNum
+function leapYear(year) {
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        return(`${year} this year is leap year`)
+    } else {
+        return(`${year} This year is not leap year`)
+    }
 }
 
-const output = leage([5, 2, 7, 9, 1])
-console.log(output)
+const giveYear = prompt("Enter your year") 
+
+const result = leapYear(giveYear)
+
+document.querySelector("h2").innerHTML = result
+
+
+
+
+// function leapYear(year) {
+//     if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+//         return(`${year} this year is leap year`)
+//     } else {
+//         return(`${year} This year is not leap year`)
+//     }
+// }
+
+// const giveYear = prompt("Enter your year") 
+
+// const result = leapYear(giveYear)
+
+// document.querySelector("h2").innerHTML = result
