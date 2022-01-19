@@ -1,30 +1,20 @@
-function leapYear(year) {
-    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-        return(`${year} this year is leap year`)
-    } else {
-        return(`${year} This year is not leap year`)
+
+function factorial(number) {
+    if(number < 0) {
+        return 'Stupid'
+    } 
+    else if(number == 0) {
+        return '1'
+    } 
+    else {
+        // let x = 1;
+        // for(let i = 1; i <= number; i++) {
+        //     x *= i
+        // }
+        return number * factorial(number - 1)
     }
 }
 
-const giveYear = prompt("Enter your year") 
-
-const result = leapYear(giveYear)
-
-document.querySelector("h2").innerHTML = result
-
-
-
-
-// function leapYear(year) {
-//     if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-//         return(`${year} this year is leap year`)
-//     } else {
-//         return(`${year} This year is not leap year`)
-//     }
-// }
-
-// const giveYear = prompt("Enter your year") 
-
-// const result = leapYear(giveYear)
-
-// document.querySelector("h2").innerHTML = result
+const factNum = 10
+const live = factorial(factNum)
+document.querySelector('h2').innerHTML = `The factorial of ${factNum} is ${live}`
