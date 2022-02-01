@@ -46,6 +46,7 @@ console.log(result);
 
 //====================================
 
+/*
 function megaFriend(names) {
     let bigName = ""
     for(let i = 0; i < names.length; i++) {
@@ -58,4 +59,38 @@ function megaFriend(names) {
 }
 const friends = ['babu', 'pranto', 'jakariya', 'real', 'arman', 'PrantoBabu']
 const result = megaFriend(friends)
-// console.log(result);
+console.log(result);
+*/
+
+
+// const items = document.getElementsByClassName('item')
+// for (let i = 0; i < items.length; i++) {
+//     const item = items[i];
+//     item.addEventListener('click', function(event){
+//         event.target.parentNode.removeChild(event.target)
+//     })
+    
+// }
+document.querySelector('#menu').addEventListener('click', function(event) {
+    event.target.parentNode.removeChild(event.target)
+})
+
+const btn = document.querySelector('button')
+btn.addEventListener('click', function(event) {
+    const menu = document.querySelector('#menu')
+    const newItem = document.createElement('li')
+    newItem.innerText = 'new'
+    menu.appendChild(newItem)
+})
+
+
+function welcome(name, morning) {
+    morning(name)
+}
+
+const gestName = 'jarariya'
+function goodMorning(cName) {
+    console.log('Good Morning', cName);
+}
+
+welcome(gestName, goodMorning)
