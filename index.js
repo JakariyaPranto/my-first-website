@@ -71,26 +71,54 @@ console.log(result);
 //     })
     
 // }
-document.querySelector('#menu').addEventListener('click', function(event) {
-    event.target.parentNode.removeChild(event.target)
-})
-
-const btn = document.querySelector('button')
-btn.addEventListener('click', function(event) {
-    const menu = document.querySelector('#menu')
-    const newItem = document.createElement('li')
-    newItem.innerText = 'new'
-    menu.appendChild(newItem)
-})
 
 
-function welcome(name, morning) {
-    morning(name)
-}
+// event babol
+// document.querySelector('#menu').addEventListener('click', function(event) {
+//     event.target.parentNode.removeChild(event.target)
+// })
 
-const gestName = 'jarariya'
-function goodMorning(cName) {
-    console.log('Good Morning', cName);
-}
+// const btn = document.querySelector('button')
+// btn.addEventListener('click', function(event) {
+//     const menu = document.querySelector('#menu')
+//     const newItem = document.createElement('li')
+//     newItem.innerText = 'new'
+//     menu.appendChild(newItem)
+// })
 
-welcome(gestName, goodMorning)
+
+// class
+// class Teacher {
+//     constructor() {
+//         this.teacherName = 'anisul islam'
+//     }
+// }
+// class Student extends Teacher {
+//     constructor(sId, sName,) {
+//         super()
+//         this.id = sId
+//         this.name = sName
+//         this.school= 'cse'
+//     }
+// }
+// const pranto = new Student(1, 'Pranto')
+// const babu = new Student(1, 'Babu')
+// console.log(pranto, babu);
+
+
+
+// const x = [
+//     {id: 21, name: 'jakariya'},
+//     {id: 22, name: 'pranto'},
+//     {id: 23, name: 'babu'}
+// ]
+
+// for (let i = 0; i < x.length; i++) {
+//     let element = x[i]
+//     let y = element.name
+//     console.log(y);
+// }
+
+
+
+
